@@ -1,0 +1,181 @@
+@import url('./reset.css');
+body{
+    font-family: "Manrope";
+    font-size: 16px;
+    color: #333333;
+}
+
+[class*="__container"]{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__container {
+    display: flex;
+    min-height: 103px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header__logo {
+    font-size: 23px;
+    font-weight: 800;
+    color: #31353b;
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+.menu-header {
+}
+.menu-header__list {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 46px;
+}
+.menu-header__item {
+}
+.menu-header__link {
+    position: relative;
+    color: #000;
+    font-weight: 700;
+    font-size: 13px;
+}
+.menu-header__link:hover {
+    color: #333;
+}
+.menu-header__link::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    background: #000;
+    transition: all 0.3s ease 0.1s;
+
+}
+.menu-header__link:hover:after{
+    left: 0;
+    width: 100%;
+}
+.page {
+    flex: 1 1 auto;
+}
+.page__main{
+
+}
+
+/* section */
+.main-block{
+
+}
+.main-block__container {
+    padding-top: 184px;
+    position: relative;
+}
+.main-block__container:after{
+    content: "";
+    top: 0;
+    left: 68%;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    background: #BDCCFF;
+}
+.main-block__body{
+    display: flex;
+}
+.main-block__content {
+    flex: 0 1 50%;
+}
+.main-block__slider{
+    flex: 0 1 50%;
+    
+    min-width: 0;
+}
+
+.content-main-block {
+}
+.content-main-block__sub-title {
+    color: #f90;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content-main-block__sub-title:not(:last-child){
+    margin-bottom: 23px;
+}
+.content-main-block__title {
+    color: #000;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.35;
+    max-width: 500px;
+}
+.content-main-block__title:not(:last-child){
+    margin-bottom: 23px;
+}
+.content-main-block__text {
+    color: #31353b;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+}
+.content-main-block__text:not(:last-child){
+    margin-bottom: 48px;
+}
+.content-main-block__form {
+}
+.form-main-block {
+    position: relative;
+    z-index: 5;
+    margin-right: -188px;
+    background: #fff url("../img/main/house.svg") 33px 50% no-repeat;
+    display: flex;
+    height: 86px;
+}
+.form-main-block__input {
+    width: 100%;
+    background-color: transparent;
+    padding-left: 74px;
+    flex: 1 1 100%;
+    border: 1px solid #dadada;
+    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.02), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+}
+.form-main-block__input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: rgb(49, 53, 59,0.3);
+}
+.form-main-block__btn {
+    /* width: 188px; */
+    flex: 0 0 188px;
+    padding: 5px 15px;
+    background: #F85A47;
+    color: #fff;
+    letter-spacing: 0.17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+.btn {
+}
+.footer {
+}
